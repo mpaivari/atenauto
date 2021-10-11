@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Huoltovaraus</title>
+<meta charset="UTF-8"/>
+<style type="text/css">
+
+table.otsikot 
+{
+  width: 100%;
+}
+table.otsikot td 
+{
+  font-size: 200%;
+  text-align: center;
+}
+
+h1
+{
+  text-decoration: underline;
+  text-align: center;
+
+}
+
+input:focus:invalid {
+   background-color: red;
+  -moz-box-shadow: none;
+}
+
+p  
+(
+  text-align: center;
+}
+
+</style>
+<script type="text/javascript" src="varaus.js" defer>
+    </script>
+</head>
+<body>
+<table class="otsikot">
+  <tr>
+  <td class="otsikko" colspan="3">Aten autokorjaamo</td>
+  </tr>
+  <tr>
+    <td><a href="etusivu.html">Etusivu</td>
+	<td><a href="yritys.html">Yritys</a></td>
+	<td><a href="huolto.html">Huoltovaraus</td>
+  </tr>
+</table>  
+<br><br><br><br>
+<form name="tilauslomake" method="post">
+	  
+<table class="huoltoKuva" width="100%">
+
+</table>	  
+    <table class="varaus">
+	   <tr>
+          <td rowspan="8"><img src="ahuolto.jpg" width="60%"><br><br></td>
+       </tr>
+       <tr>
+            <td><label>Rekisterinumero</label></td>
+			<td>
+			<input type="text" id="rekisteri" required placeholder="Kirjoita rekisterinumero"></td>
+        </tr>
+       <tr>
+            <td><label>Etunimi</label></td>
+			<td>
+			<input type="text" id="etunimi" required placeholder="Etunimi"></td>
+        </tr>
+       <tr>
+            <td><label>Sukunimi</label></td>
+			<td>
+			<input type="text" id="sukunimi" required placeholder="Sukunimi"></td>
+        </tr>
+       <tr>
+            <td><label>Osoite</label></td>
+			<td>
+			<input type="text" id="osoite" required placeholder="Kirjoita osoite"></td>
+        </tr>
+       <tr>
+            <td><label>Puhelin</label></td>
+			<td>
+			<input type="text" id="puhelin" required placeholder="Kirjoita puhelinnumero"></td>
+        </tr>
+       <tr>
+            <td><label>Vian kuvaus</label></td>
+			<td>
+			<textarea id="text" rows="14" cols="75"  placeholder="Vian kuvaus" width="100%"></textarea></td>
+        </tr>
+       <tr>
+            <td></td>
+			<td>
+			    <p class="nappi">
+               <input type="submit" id="varaus" value="Varaa aika!">
+            </p></td>
+        </tr>		
+    </table>
+</form>
+</body>
+</html>
