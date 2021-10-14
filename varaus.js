@@ -1,11 +1,15 @@
 const nappi=document.querySelector('#varaus');
 const rekisteri=document.querySelector('#rekisteri');
+const etunimi=document.querySelector('#etunimi');
+const sukunimi=document.querySelector('#sukunimi');
+const osoite=document.querySelector('#osoite');
+const puhelin=document.querySelector('#puhelin');
+const txt=document.querySelector('#txt');
 
 function teeVaraus() {
    var paivanro = Math.floor((Math.random() * 5) + 1);
    var paiva = '';
    var huoltoKlo = 8+Math.floor((Math.random() * 7) + 1) +':00';
-   var reknro=rekisteri.value;
 
   switch (paivanro) {
   
@@ -32,10 +36,11 @@ function teeVaraus() {
         paiva = 'perjantaina';
         break;
     }
-
-   if (reknro != '')
+   
+   if (rekisteri.value != '' and etunimi.value != '' and sukunimi.value != '' and
+      osoite.value != '' and puhelin.value != '' and txt.value != '')
    {
-     alert('Sinulle on varattu huolto autolle ['+reknro+'] ensi viikon ' +paiva+' kello '+huoltoKlo+'. Tervetuloa!'); 
+     alert('Sinulle on varattu huolto autolle ['+rekisteri.value+'] ensi viikon ' +paiva+' kello '+huoltoKlo+'. Tervetuloa!'); 
    }
    else
     alert('Anna auton rekisterinumero');  
