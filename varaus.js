@@ -43,7 +43,7 @@ function teeVaraus() {
      alert('Sinulle on varattu huolto autolle ['+rekisteri.value+'] ensi viikon ' +paiva+' kello '+huoltoKlo+'. Tervetuloa!'); 
    }
    else
-    alert('Anna auton rekisterinumero');  
+    alert('Kirjoita kaikki tiedot!');  
   }
   
 nappi.addEventListener('click', teeVaraus);
