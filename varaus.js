@@ -4,7 +4,7 @@ const etunimi=document.querySelector('#etunimi');
 const sukunimi=document.querySelector('#sukunimi');
 const osoite=document.querySelector('#osoite');
 const puhelin=document.querySelector('#puhelin');
-const txt=document.querySelector('#txt');
+const txt=document.querySelector('#text');
 
 function teeVaraus() {
    var paivanro = Math.floor((Math.random() * 5) + 1);
