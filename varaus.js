@@ -37,8 +37,8 @@ function teeVaraus() {
         break;
     }
    
-   if (rekisteri.value != '' and etunimi.value != '' and sukunimi.value != '' and
-      osoite.value != '' and puhelin.value != '' and txt.value != '')
+   if (rekisteri.value != '' && etunimi.value != '' && sukunimi.value != '' &&
+      osoite.value != '' && puhelin.value != '' && txt.value != '')
    {
      alert('Sinulle on varattu huolto autolle ['+rekisteri.value+'] ensi viikon ' +paiva+' kello '+huoltoKlo+'. Tervetuloa!'); 
    }
